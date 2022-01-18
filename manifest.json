@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "How Far From Home?",
+  "version": "0.1",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlOnc9wVGdxXpw5E1xoqBgKA0d7e96CCO365+HpmPzEYqtbBI1U3zrIa3/NktR9nlHPUPmcw7VfLvVK76TovQYXW6k2ggMboqlq8UISAu6595sGqqWAAvzRkN0bWqj1+7nBmso/SAnuMTJFLnI7v/un+rht8rc64sEWBUeJ+lT3Sd5IcRhVAiJ+oG3LXGvr18eylD0/IslpdLKYXLF0c11hAZs050M+zV7iEtsjcl5J9qkwZ0RsjpseLBq4Whxr1omQGEHiHRf/zXXJiNZhUbJmOITXcUD1G5xDaof2ScDxJYO34+ITf9gv7PVIrmdLZEHMlQ+JkAIUmpVCPi2h+tbQIDAQAB",
+  "browser_action": {
+    "default_icon": "house.png",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "persistent": false,
+    "page": "background.html"
+  },
+  "permissions": [
+    "activeTab", "tabs", "storage"
+  ],
+  "content_security_policy": "script-src 'self' https://maps.googleapis.com; object-src 'self'"
+}

@@ -16,7 +16,7 @@ function CheckDuration(home, dest) {
             const results = response.rows[0].elements;
             const element = results[0];
             if(element.status === "NOT_FOUND"){
-                alert(`Error: The highlighted text is not a place`)
+                alert(`Error: Either the highlighted place or Home are places that do not exist`)
             }
             if(element.status === "ZERO_RESULTS"){
                 alert(`Error: There is no way to drive to the highlighted place`)
